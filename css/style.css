@@ -1,0 +1,148 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+div {
+  box-sizing: border-box;
+}
+.nav-style {
+  background-color: black;
+}
+.nav-item a {
+  color: white;
+}
+.nav-item span {
+  color: white;
+}
+.nav-item i {
+  color: white;
+}
+.navbar-brand {
+  color: white;
+}
+.button-form {
+  width: 30%;
+  background: #f0f0f0;
+  color: black;
+}
+input {
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  border: none;
+  background: #f0f0f0;
+}
+.first-box h1 {
+  font-size: 54px;
+  font-family: "Inter", system-ui, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: bold;
+}
+.prices-btn {
+  width: 35%;
+  height: 45px;
+  background-color: black;
+  color: white;
+}
+.link-recent {
+  color: black;
+  padding-left: 10px;
+}
+img {
+  width: 100%;
+}
+.detail-button {
+  background: #f0f0f0;
+  color: black;
+}
+.text-card-arrange {
+  font-size: 12px;
+}
+.fourth-portion {
+  background: rgb(157, 205, 214);
+  border-radius: 10px;
+  position: relative;
+}
+.positioned-div {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  background: rgb(157, 205, 214);
+}
+.fourth-portion img {
+  width: 30%;
+}
+.input-label-div {
+  display: flex;
+}
+input {
+  padding: 10px;
+}
+.list-group li {
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+.benefit-style-box {
+  border-radius: 10px;
+  height: 275px;
+  border: 1px solid #f1f1f1;
+  padding: 24px;
+}
+
+/* media query start */
+@media (max-width: 1484px) {
+  .fourth-portion img {
+    width: 40%;
+  }
+  .list-group {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 766px) {
+  .fourth-portion img {
+    width: 40%;
+  }
+  .list-group {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 661px) {
+  .button-form {
+    width: 40%;
+  }
+  .first-box h1 {
+    font-size: 40px;
+  }
+  .fourth-portion img {
+    display: none;
+  }
+  .positioned-div {
+    width: 100%;
+  }
+  .margin-arrange {
+    margin-top: 9em;
+  }
+}
+@media (max-width: 575px) {
+  .button-form {
+    width: 55%;
+  }
+  .first-box h1 {
+    font-size: 25px;
+  }
+  .fourth-portion img {
+    display: none;
+  }
+  .prices-btn {
+    width: 65%;
+  }
+  .benefit-style-box {
+    padding: 0;
+    padding-left: 10px;
+  }
+}

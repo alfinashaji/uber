@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- nav secction start -->
+    <nav class="navbar navbar-expand-lg" style="background: black">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand text-white fs-3" href="#">Uber</a>
+
+        <!-- Hamburger (Only for LEFT items) -->
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#leftMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- LEFT MENU (collapses on mobile) -->
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="leftMenu"
+        >
+          <div>
+            <ul class="navbar-nav ms-4">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Ride</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Drive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About ▾</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="navbar-nav ms-4 d-flex align-items-lg-center">
+              <li class="nav-item">
+                <i class="fa-solid fa-globe"></i>
+
+                <span>EN</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Help</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center gap-4">
+          <a class="text-white text-decoration-none" href="#">Log in</a>
+
+          <button class="btn btn-light rounded-pill px-4 py-1">Sign up</button>
+        </div>
+      </div>
+    </nav>
+    <!-- nav secction end -->
+    <!-- banner start -->
+    <div class="container-fluid d-flex pt-5 ps-0 ps-xl-5 gap-5">
+      <div
+        class="first-box col-12 col-xl-5 d-flex flex-column gap-3 ps-4 ps-xl-5 ms-0 ms-xl-5"
+      >
+        <p class="p-0 m-0">Kochi, IN Change city</p>
+        <h1 class="m-0">Go anywhere with Uber</h1>
+        <button
+          type="button"
+          class="btn button-form rounded-pill"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          <i class="fa-solid fa-clock" style="color: black"></i>
+          Pickup now
+          <i class="fa-solid fa-chevron-down" style="color: black"></i>
+        </button>
+
+        <div class="col-12 col-sm-9 col-md-8 d-flex flex-column gap-3">
+          <input type="text" />
+          <input type="text" />
+        </div>
+        <div class="col-12 col-md-9 d-flex flex-column flex-md-row">
+          <button class="prices-btn rounded-3">see prices</button>
+          <a href="#" class="link-recent">Log in to see your recent activity</a>
+        </div>
+      </div>
+      <div class="second-box col-5 pt-5 d-none d-xl-block">
+        <img src="/images/banner-image.webp" alt="banner-image" srcset="" />
+      </div>
+    </div>
+    <!-- banner end -->
+    <!-- second portion start -->
+    <div class="container-fluid d-flex pt-5 ps-0 ps-xl-5 pe-4 pe-xl-5">
+      <div class="ps-4 ps-xl-5 pe-0 pe-xl-5 ms-0 ms-xl-5 me-0 me-xl-5">
+        <h1>Suggestions</h1>
+        <div class="row">
+          <div class="col-sm-6 col-xl-4 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body d-flex">
+                <div class="col-8">
+                  <h5 class="card-title">Ride</h5>
+                  <p class="card-text text-card-arrange">
+                    Go anywhere with Uber. Request a ride, hop in, and go.
+                  </p>
+                  <a href="#" class="btn detail-button rounded-pill">Details</a>
+                </div>
+                <div class="col-4">
+                  <img src="/images/ober-image.png" alt="" srcset="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-4 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body d-flex">
+                <div class="col-8">
+                  <h5 class="card-title">Ride</h5>
+                  <p class="card-text text-card-arrange">
+                    Go anywhere with Uber. Request a ride, hop in, and go.
+                  </p>
+                  <a href="#" class="btn detail-button rounded-pill">Details</a>
+                </div>
+                <div class="col-4">
+                  <img src="/images/ober-image.png" alt="" srcset="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-4 mb-3 mt-3 mt-xl-0 mb-sm-0">
+            <div class="card">
+              <div class="card-body d-flex">
+                <div class="col-8">
+                  <h5 class="card-title">Ride</h5>
+                  <p class="card-text text-card-arrange">
+                    Go anywhere with Uber. Request a ride, hop in, and go.
+                  </p>
+                  <a href="#" class="btn detail-button rounded-pill">Details</a>
+                </div>
+                <div class="col-4">
+                  <img src="/images/ober-image.png" alt="" srcset="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-4 mb-3 mb-sm-0 mt-3">
+            <div class="card">
+              <div class="card-body d-flex">
+                <div class="col-8">
+                  <h5 class="card-title">Ride</h5>
+                  <p class="card-text text-card-arrange">
+                    Go anywhere with Uber. Request a ride, hop in, and go.
+                  </p>
+                  <a href="#" class="btn detail-button rounded-pill">Details</a>
+                </div>
+                <div class="col-4">
+                  <img src="/images/ober-image.png" alt="" srcset="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- second portion end -->
+    <!-- Third portion Start -->
+    <div class="container-fluid d-flex pt-5 ps-0 ps-xl-5 pe-0 pe-xl-5">
+      <div
+        class="col-12 ps-4 ps-xl-5 pe-4 pe-xl-5 ms-0 ms-xl-5 me-0 me-xl-5 d-flex flex-column flex-xl-row align-items-center gap-5"
+      >
+        <div class="col-12 col-xl-5">
+          <h1>Log in to see your account details</h1>
+
+          <div class="col-12 col-md-9">
+            <p>
+              View past trips, tailored suggestions, support resources, and
+              more.
+            </p>
+          </div>
+
+          <div class="col-12 d-flex flex-column flex-md-row">
+            <button class="prices-btn rounded-3">Log in to your Account</button>
+            <a href="#" class="link-recent">Create an account</a>
+          </div>
+        </div>
+        <div class="ms-0 ms-xl-5 ps-0 ps-xl-5 col-12 col-xl-5">
+          <img src="/images/log-in-image.svg" alt="log-in-images" srcset="" />
+        </div>
+      </div>
+    </div>
+    <!-- Third portion End -->
+    <!-- Fourth portion Start -->
+    <div
+      class="container-fluid d-flex pt-5 ps-0 ps-xl-5 pe-0 pe-xl-5 mt-5 mt-md-0"
+    >
+      <div
+        class="col-12 ps-4 ps-xl-5 pe-4 pe-xl-5 ms-0 ms-xl-5 me-0 me-xl-5 d-flex flex-column flex-xl-row gap-4 pt-5 mt-5"
+      >
+        <div
+          class="col-12 col-md-12 col-xl-7 d-flex justify-content-end align-items-center fourth-portion"
+        >
+          <div class="positioned-div ps-4 pe-4 pt-4 pb-4 pb-md-0">
+            <h1 class="mb-4">Get your ride right with Uber Reserve</h1>
+            <p class="m-0">Choose date and time</p>
+            <div class="input-label-div col-12 gap-2">
+              <div class="col-6">
+                <label for="date">Date</label>
+                <input type="date" value="date" />
+              </div>
+              <div class="col-6">
+                <label for="date">Time</label>
+                <input type="time" value="time" />
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <button
+                class="prices-btn rounded-3 text-center"
+                style="width: 100%"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+          <img src="/images/get-ride-image.png" alt="" srcset="" />
+        </div>
+        <div class="col-12 col-lg-4 pe-0 pe-lg-5 margin-arrange">
+          <div class="benefit-style-box">
+            <p>Benefits</p>
+            <div class="benefit-box d-flex">
+              <div class="col-1 d-flex flex-column gap-5 pt-4">
+                <img
+                  src="/images/date-icon.svg"
+                  alt=""
+                  srcset=""
+                  style="width: 50%"
+                />
+                <img
+                  src="/images/time-icon.svg"
+                  alt=""
+                  srcset=""
+                  style="width: 50%"
+                />
+                <img
+                  src="/images/cancel-icon.svg"
+                  alt=""
+                  srcset=""
+                  style="width: 50%"
+                />
+              </div>
+              <div class="col-11 col-md-10">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    Choose your exact pickup time up to 90 days in advance.
+                  </li>
+                  <li class="list-group-item">
+                    Extra wait time included to meet your ride.
+                  </li>
+                  <li class="list-group-item">
+                    Cancel at no charge up to 60 minutes in advance.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fourth portion End -->
+    <!-- Fifth portion Start -->
+    <div class="container-fluid d-flex pt-5 mt-xl-5 ps-0 ps-xl-5 pe-0 pe-xl-5">
+      <div
+        class="col-12 ps-4 ps-xl-0 pe-4 pe-xl-5 ms-0 ms-xl-0 me-0 me-xl-5 d-flex flex-column flex-xl-row align-items-center gap-5"
+      >
+        <div class="ms-0 ms-xl-5 ps-0 ps-xl-5 col-12 col-xl-5">
+          <img src="/images/drive-image.webp" alt="log-in-images" srcset="" />
+        </div>
+        <div class="col-12 col-xl-5 ps-xl-5 ms-xl-5">
+          <h1>Drive when you want, make what you need</h1>
+
+          <div class="col-12 col-md-9">
+            <p>
+              Make money on your schedule with deliveries or rides—or both. You
+              can use your own car or choose a rental through Uber.
+            </p>
+          </div>
+
+          <div class="col-12 d-flex flex-column flex-md-row">
+            <button class="prices-btn rounded-3">Get Started</button>
+            <a href="#" class="link-recent">Already have an account? Sign in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fifth portion End -->
+    <!-- Sixth portion Start -->
+    <div class="container-fluid d-flex pt-5 ps-0 ps-xl-5 pe-0 pe-xl-5">
+      <div
+        class="col-12 ps-4 ps-xl-5 pe-4 pe-xl-5 ms-0 ms-xl-5 me-0 me-xl-5 d-flex flex-column flex-xl-row align-items-center gap-5"
+      >
+        <div class="col-12 col-xl-5">
+          <h1>The Uber you know, reimagined for business</h1>
+
+          <div class="col-12 col-xl-10">
+            <p>
+              Uber for Business is a platform for managing global rides and
+              meals, and local deliveries, for companies of any size.
+            </p>
+          </div>
+
+          <div class="col-12 d-flex flex-column flex-md-row">
+            <button class="prices-btn rounded-3">Get Started</button>
+            <a href="#" class="link-recent">Check out our solutions</a>
+          </div>
+        </div>
+        <div class="ms-0 ms-xl-0 ps-0 pt-xl-5 ps-xl-0 col-12 col-xl-5">
+          <img src="/images/uber-buisness.webp" alt="log-in-images" srcset="" />
+        </div>
+      </div>
+    </div>
+    <!-- sixth portion End -->
+    <!-- Seventh portion Start -->
+    <div class="container-fluid d-flex pt-5 mt-xl-5 ps-0 ps-xl-5 pe-0 pe-xl-5">
+      <div
+        class="col-12 ps-4 ps-xl-0 pe-4 pe-xl-5 ms-0 ms-xl-0 me-0 me-xl-5 d-flex flex-column flex-xl-row align-items-center gap-5"
+      >
+        <div class="ms-0 ms-xl-5 ps-0 ps-xl-5 col-12 col-xl-5">
+          <img src="/images/money-image.webp" alt="log-in-images" srcset="" />
+        </div>
+        <div class="col-12 col-xl-5 ps-xl-5 ms-xl-5">
+          <h1>Make money by renting out your car</h1>
+
+          <div class="col-12 col-md-9">
+            <p>
+              Connect with thousands of drivers and earn more per week with
+              Uber’s free fleet management tools.
+            </p>
+          </div>
+
+          <div class="col-12 d-flex flex-column flex-md-row">
+            <button class="prices-btn rounded-3">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Seventh portion End -->
+    <!-- Qr code section -->
+    <div class="container-fluid d-flex pt-5">
+      <div
+        class="col-12 pt-5 ps-4 ps-xl-5 pe-4 pb-5 d-flex flex-column flex-xl-row align-items-center"
+        style="background: #f6f6f6"
+      >
+        <div class="ms-0 ms-xl-5 ps-0 ps-xl-5 col-12 col-xl-5">
+          <div class="col-12 mb-5">
+            <h1>It’s easier in the apps</h1>
+          </div>
+          <div class="card mb-3 p-4">
+            <div class="row g-0">
+              <div class="col-md-3">
+                <img
+                  src="/images/qr-scanner.webp"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-9 d-flex align-items-center">
+                <div class="card-body">
+                  <h5 class="card-title">Dowload The Uber App</h5>
+                  <p class="card-text">Scan to dowload</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="ms-0 ms-xl-5 mt-0 mt-xl-5 pt-5 ps-0 ps-xl-5 col-12 col-xl-5"
+        >
+          <div class="card mb-3 p-4">
+            <div class="row g-0">
+              <div class="col-md-3">
+                <img
+                  src="/images/qr-scanner.webp"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-9 d-flex align-items-center">
+                <div class="card-body">
+                  <h5 class="card-title">Dowload The Uber App</h5>
+                  <p class="card-text">Scan to dowload</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section start -->
+    <div
+      class="container-fluid d-flex"
+      style="background: #000000; color: white"
+    >
+      <div
+        class="col-12 pt-5 ps-0 ps-xl-4 ps-xl-5 pe-4 d-flex flex-column align-items-center"
+        style="background: #000000"
+      >
+        <div class="col-12 ps-0 ps-xl-5">
+          <h3 class="ps-4 ps-xl-5">Uber</h3>
+          <p class="ps-4 ps-xl-5 pt-4">Visit the help center</p>
+        </div>
+        <div class="col-12 ps-0 ps-xl-5 pt-5">
+          <div class="row ps-2 gap-5 flex-column flex-xl-row">
+            <div class="col-12 col-xl-2 ps-4">
+              <p>Company</p>
+              <ul class="p-0 m-0 list-unstyled d-flex flex-column gap-2">
+                <li>About us</li>
+                <li>Our offering</li>
+                <li>News room</li>
+                <li>Investors</li>
+                <li>Blog</li>
+                <li>Careers</li>
+              </ul>
+            </div>
+            <div class="col-12 col-xl-2 ps-4">
+              <p>Products</p>
+              <ul class="p-0 m-0 list-unstyled d-flex flex-column gap-2">
+                <li>Ride</li>
+                <li>Drive</li>
+                <li>Eat</li>
+                <li>Uber for Business</li>
+                <li>uber Freight</li>
+                <li>Gift cards</li>
+                <li>Uber Health</li>
+              </ul>
+            </div>
+            <div class="col-12 col-xl-2 ps-4">
+              <p>Global citizenship</p>
+              <ul class="p-0 m-0 list-unstyled d-flex flex-column gap-2">
+                <li>Safety</li>
+                <li>Sustainability</li>
+              </ul>
+            </div>
+            <div class="col-12 col-xl-2 ps-4">
+              <p>Travel</p>
+              <ul class="p-0 m-0 list-unstyled d-flex flex-column gap-2">
+                <li>Reserve</li>
+                <li>Airports</li>
+                <li>Cities</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 ps-0 ps-xl-5 pt-5 d-flex flex-column flex-xl-row pe-5"
+        >
+          <div class="col-6 ps-3 ps-xl-3 d-flex gap-4">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+            <i class="fab fa-youtube" aria-hidden="true"></i>
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </div>
+          <div
+            class="col-6 ps-3 ps-xl-0 pt-5 pt-xl-0 d-flex flex-column flex-xl-row justify-content-end pe-0 pe-xl-5 gap-4"
+          >
+            <div class="d-flex align-items-center gap-3">
+              <i class="fa-solid fa-language"></i>
+              <p class="p-0 m-0">language</p>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <i class="fa-solid fa-location-dot"></i>
+              <p class="p-0 m-0">Location</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
