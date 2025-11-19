@@ -1,3 +1,7 @@
+img,
+input {
+  width: 100%;
+}
 body {
   padding: 0;
   margin: 0;
@@ -6,60 +10,52 @@ div {
   box-sizing: border-box;
 }
 .nav-style {
-  background-color: black;
+  background-color: #000;
 }
-.nav-item a {
-  color: white;
+.button-form,
+input {
+  background: #f0f0f0;
 }
-.nav-item span {
-  color: white;
-}
-.nav-item i {
-  color: white;
-}
+.nav-item a,
+.nav-item i,
+.nav-item span,
 .navbar-brand {
-  color: white;
+  color: #fff;
 }
 .button-form {
   width: 30%;
-  background: #f0f0f0;
-  color: black;
+  color: #000;
 }
 input {
-  width: 100%;
   height: 45px;
   border-radius: 10px;
   border: none;
-  background: #f0f0f0;
+  padding: 10px;
 }
 .first-box h1 {
   font-size: 54px;
-  font-family: "Inter", system-ui, "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
-  font-weight: bold;
+  font-family: Inter, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
 }
 .prices-btn {
   width: 35%;
   height: 45px;
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
 }
 .link-recent {
-  color: black;
+  color: #000;
   padding-left: 10px;
-}
-img {
-  width: 100%;
 }
 .detail-button {
   background: #f0f0f0;
-  color: black;
+  color: #000;
 }
 .text-card-arrange {
   font-size: 12px;
 }
 .fourth-portion {
-  background: rgb(157, 205, 214);
+  background: #9dcdd6;
   border-radius: 10px;
   position: relative;
 }
@@ -67,16 +63,13 @@ img {
   width: 50%;
   position: absolute;
   left: 0;
-  background: rgb(157, 205, 214);
+  background: #9dcdd6;
 }
 .fourth-portion img {
   width: 30%;
 }
 .input-label-div {
   display: flex;
-}
-input {
-  padding: 10px;
 }
 .list-group li {
   border-left: none;
@@ -89,8 +82,6 @@ input {
   border: 1px solid #f1f1f1;
   padding: 24px;
 }
-
-/* media query start */
 @media (max-width: 1484px) {
   .fourth-portion img {
     width: 40%;
@@ -142,7 +133,6 @@ input {
     width: 65%;
   }
   .benefit-style-box {
-    padding: 0;
-    padding-left: 10px;
+    padding: 0 0 0 10px;
   }
 }
