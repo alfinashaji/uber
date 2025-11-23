@@ -4,39 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- Preconnect for Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Preload Bootstrap (Non-blocking) -->
     <link
-      rel="preload"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
     />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      />
-    </noscript>
-
-    <!-- Preload Font Awesome (Non-blocking) -->
     <link
-      rel="preload"
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      />
-    </noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Your Custom Styles -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -45,16 +27,6 @@
       <div class="container">
         <!-- Logo -->
         <a class="navbar-brand text-white fs-3" href="#">Uber</a>
-
-        <!-- Hamburger (Only for LEFT items) -->
-        <button
-          class="navbar-toggler text-white"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#leftMenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
         <!-- LEFT MENU (collapses on mobile) -->
         <div
@@ -96,6 +68,15 @@
 
           <button class="btn btn-light rounded-pill px-4 py-1">Sign up</button>
         </div>
+        <!-- Hamburger (Only for LEFT items) -->
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#leftMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
     </nav>
     <!-- nav secction end -->
@@ -505,7 +486,7 @@
         </div>
         <div class="col-12 ps-0 ps-xl-5 pt-5">
           <div class="row ps-2 gap-5 flex-column flex-xl-row">
-            <div class="col-12 col-xl-2 ps-4">
+            <div class="col-12 col-xl-2 ps-4 ps-xl-5">
               <p>Company</p>
               <ul class="p-0 m-0 list-unstyled d-flex flex-column gap-2">
                 <li>About us</li>
